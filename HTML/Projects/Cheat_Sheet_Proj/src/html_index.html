@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta data about the html -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Shreyas Potdar">
+        <meta name="description" content="HTML and CSS Cheat Sheet Tutorials">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../resources/css/index.css" rel="stylesheet" type="text/css">
+        <title>HTML/CSS Cheat Sheet</title>
+    </head>
+
+    <body>
+        <!--using the semantic element header-->
+        <header class="top-heading">
+            <h1>HTML/CSS Cheat Sheet</h1>
+            
+            <!--using the nav element to navigate to different pages-->
+            <nav class="language">
+                <a href="" >CSS</a>
+            </nav>
+
+        </header>
+        
+        <main>
+            <section>
+                <br>
+                <!-- created the id to return to the top of the page from your current position instead of scrolling-->
+               <span id="about-html">What is HTML?</span>
+                <p> HTML is the skeleton of all web pages. It’s often the first language learned by developers, marketers, and designers and is core to front-end development work. 
+                    <br><br>HTML provides structure to the content appearing on a website, such as images, text, or videos. Right-click on any page on the internet, choose “Inspect,” and you’ll see HTML in a panel of your screen.
+                    <br><br>HTML stands for HyperText Markup Language:
+                    <ul class="bullet-points">
+                        <li>A markup language is a computer language that defines the structure and presentation of raw text.</li>
+                        <br><li>In HTML, the computer can interpret raw text that is wrapped in HTML elements.</li>
+                        <br><li>HyperText is text displayed on a computer or device that provides access to other text through links, also known as hyperlinks.</li>
+                    </ul>
+
+                    <br><br>
+                    <span id="topics">Topics:</span>
+                    <ul class="topics-list">
+                        <li class="topic"><a href="#html_anatomy">HTML Anatomy</a></li>
+                        <li class="topic"><a href="#html_divs">Divs</a></li>
+                        <li class="topic"><a href="#html_attr">Attributes</a></li>
+                        <li class="topic"><a href="#html_disp_text">Displaying Text</a></li>
+                        <li class="topic"><a href="#html_styling_text">Styling Text</a></li>
+                        <li class="topic"><a href="#html_img">Image</a></li>
+                        <li class="topic"><a href="#html_img_alts">Image Alternative Text</a></li>
+                        <li class="topic"><a href="#html_videos">Videos</a></li>
+                        <li class="topic"><a href="#html_link_same_page">Linking Same page</a></li>
+                        <li class="topic">Table - presenting the data in tabular format</li>
+                            <ul>
+                                <li class="topic"><a href="#cre-table">Creating Table</a></li> 
+                                <li class="topic"><a href="#cre-table-row">Creating Table Row</a></li> 
+                                <li class="topic"><a href="#cre-table-data">Creating Table Data</a></li> 
+                                <li class="topic"><a href="#cre-table-heading">Creating Table Heading</a></li> 
+                                <li class="topic"><a href="#cre-spanning-columns">Creating Spanning Columns</a></li> 
+                                <li class="topic"><a href="#cre-spanning-rows">Creating Spanning Rows</a></li> 
+                                <li class="topic"><a href="#cre-table-body">Creating Table Body</a></li> 
+                                <li class="topic"><a href="#cre-table-head">Creating Table Head</a></li> 
+                                <li class="topic"><a href="#cre-table-footer">Creating Table Footer</a></li> 
+                            </ul>
+                        <li class="topic"><a href="#forms">Forms</a></li>
+                        <ul>
+                            <li class="topic"><a href="#text-input">Text Input</a></li> 
+
+                        </ul>
+                    </ul>
+                </p>
+
+                <br><br>
+                
+                <span id="html_anatomy" class="topic-headings">HTML Anatomy</span>
+                <p>
+                    <img src="../resources/images/anatomy.JPG" alt="HTML anatomy diagram" class="img-center"/>
+                    <br><br>
+                    HTML is composed of elements.
+                    The above diagram displays an HTML paragraph element. As we can see, the paragraph element is made up of:
+
+                    <ul class="bullet-points">
+                        <li> An opening tag (&lt;p&gt;)</li>
+                        <li>The content (“Hello World!” text)</li>
+                        <li> A closing tag (&lt;p&gt;)</li>
+                    </ul>
+
+                    <p>
+                        A tag and the content between it is called an HTML element. 
+                        <br><br>There are many tags that we can use to organize and display text and other types of content, like images.
+    
+    
+                        <ul class="bullet-points">
+                            <li>HTML element (or simply, element) — a unit of content in an HTML document formed by HTML tags and the text or media it contains.</li>
+                            <br> <li>HTML Tag — the element name, surrounded by an opening ( &lt; ) and closing ( &gt; ) angle bracket.</li>
+                            <br> <li>Opening Tag — the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets.</li>
+                            <br> <li>Content — The information (text or other elements) contained between the opening and closing tags of an HTML element.</li>
+                            <br> <li>Closing tag — the second HTML tag used to end an HTML element. Closing tags have a forward slash ( &frasl; ) inside of them, directly after the left angle bracket.</li>
+                        </ul>
+        
+                    </p>
+
+                </p>
+              
+                <span id="navigate"><a href="#about-html" class="top">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="html_divs" class="topic-headings">HTML Divs</span>
+                <p>
+                    One of the most popular elements in HTML is the &lt;div&gt; element. &lt;div&gt; is short for “division” or a container that divides the page into sections. 
+                    These sections are very useful for grouping elements in your HTML together.
+                    <br>
+                </p>
+                <article class="remove-space">
+                    <span class="bracket"><</span>
+                    <span class="html-tag">body</span>
+                    <span class="bracket">></span>
+                    <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">div</span>
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">h1</span>
+                            <span class="bracket">></span>
+                            <span class="content">Why use divs?</span>
+                            <span class="bracket"><</span>
+                            <span class="html-tag">&frasl;h1</span>
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">p</span>
+                            <span class="bracket">></span>
+                            <span class="content">Great for grouping elements!</span>
+                            <span class="bracket"><</span>
+                            <span class="html-tag">&frasl;p</span>
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;div</span>
+                        <span class="bracket">></span>
+                    <br>
+                    <span class="bracket"><</span>
+                    <span class="html-tag">&frasl;body</span>
+                    <span class="bracket">></span>
+                </article>
+                <br>
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="html_attr" class="topic-headings">HTML Attributes</span>
+                <p>
+                    If we want to expand an element’s tag, we can do so using an attribute. 
+                    <br>Attributes are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling. 
+                    <br><br>Attributes are made up of the following two parts:
+                    <br>
+                    <ul class="bullet-points">
+                        <li>The name of the attribute</li>
+                       <br> <li>The value of the attribute</li>
+                    </ul>
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">div</span>
+                        <span class="html-attr">&nbsp;id=</span>
+                        <span class="html-attr-value">"intro"</span>
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">h1</span>
+                            <span class="bracket">></span>
+                            <span class="content">Introduction</span>
+                            <span class="bracket"><</span>
+                            <span class="html-tag">&frasl;h1</span>
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;div</span>
+                        <span class="bracket">></span>
+                    </article>
+                    <p>
+                        One commonly used attribute is the id. We can use the id attribute to specify different content (such as &lt;div&gt;s) and is really helpful when you use an element more than once. 
+                        ids have several different purposes in HTML
+                    </p>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="html_disp_text" class="topic-headings">HTML Displaying Text</span>
+                <p>
+                    If you want to display text in HTML, you can use a paragraph or span:
+                    <ul class="bullet-points">
+                        <li>Paragraphs (&lt;p&gt;) contain a block of plain text.</li>
+                       <br> <li>&lt;span&gt; contains short pieces of text or other HTML. They are used to separate small pieces of content that are on the same line as other content.</li>
+                    </ul>
+
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">div</span>
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">h1</span>
+                            <span class="bracket">></span>
+                            <span class="content">Technology</span>
+                            <span class="bracket"><</span>
+                            <span class="html-tag">&frasl;h1</span>
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;div</span>
+                        <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">div</span>
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">p</span>
+                            <span class="bracket">></span>
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">span</span>
+                            <span class="bracket">></span>
+                            <span class="content">Self-driving cars</span>
+                            <span class="bracket"><</span>
+                            <span class="html-tag">&frasl;span</span>
+                            <span class="bracket">></span>
+                            <span class="content">are anitcipated to replace up to 2 million jobs over the next two decades</span>
+                            <span class="bracket"><</span>
+                            <span class="html-tag">&frasl;p</span>
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;div</span>
+                        <span class="bracket">></span>
+                    </article>
+
+                    <p>
+                        In the example above, there are two different &lt;div&gt;. The second &lt;div&gt; contains a &lt;p&gt; with &lt;span&gt;Self-driving cars&lt;&frasl;span&gt;. This &lt;span&gt; element separates “Self-driving cars” from the rest of the text in the paragraph.
+                        <br>It’s best to use a <span> element when you want to target a specific piece of content that is inline, or on the same line as other text. If you want to divide your content into blocks, it’s better to use a &lt;div&gt;.
+                    </p>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="html_styling_text" class="topic-headings">HTML Styling Text</span>
+                <p>
+                    You can also style text using HTML tags. The &lt;em&gt; tag emphasizes text, while the &lt;strong&gt; tag highlights important text.
+
+                    Later, when you begin to style websites, you will decide how you want browsers to display content within &lt;em&gt; and &lt;strong&gt; tags.
+                    <br>Browsers, however, have built-in style sheets that will generally style these tags in the following ways:
+                    <ul class="bullet-points">
+                        <li>The &lt;em&gt; tag will generally render as italic emphasis</li>
+                       <br> <li>The &lt;strong&gt; will generally render as bold emphasis.</li>
+                    </ul>
+
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">p</span>
+                        <span class="bracket">></span>
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">strong</span>
+                            <span class="bracket">></span>
+                            <span class="content">&nbsp;The Nile River&nbsp;</span>
+                            <span class="bracket"><</span>
+                            <span class="html-tag">&frasl;strong</span>
+                            <span class="bracket">></span>
+
+                            <span class="content">&nbsp;is the&nbsp;</span>
+
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">&frasl;em</span>
+                            <span class="bracket">></span>
+                            <span class="content">&nbsp;longest&nbsp;</span>
+                            <span class="bracket"><</span>
+                            <span class="html-tag">&frasl;em</span>
+                            <span class="bracket">></span>
+
+                            <span class="content">&nbsp;river in the world, measuring over 6,850 kilometers long 
+                                (approximately 4,260 miles).&nbsp;</span>
+                        <span class="bracket"><</span>
+                        <span class="html-tag">&frasl;p</span>
+                        <span class="bracket">></span>
+                    </article>
+
+                    <p>
+                        In this example, the &lt;strong&gt; and &lt;em&gt; tags are used to emphasize the text to produce the following:
+                        <br>The Nile River is the longest river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).
+                        <br>You will see, “The Nile River” is bolded and “longest” is in italics.
+                    </p>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="html_img" class="topic-headings">HTML Images</span>
+               
+                <p>
+                    The &lt;img&gt; tag allows you to add an image to a web page.
+                    <br> &lt;img&gt; tag is a self-closing tag. Note that the end of the &lt;img&gt; tag has a forward slash &frasl;
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">img</span>
+
+                            <span class="html-attr">&nbsp;src=</span>
+                            <span class="html-attr-value">"image-location.jpg"&ensp;</span>
+
+                        <span class="html-tag">&frasl;</span>
+                        <span class="bracket">></span>
+                    </article>
+
+                    <p>
+                        The &lt;img&gt; tag has a required attribute called src. 
+                        The src attribute must be set to the image’s source, or the location of the image. 
+                        In this case, the value of src must be the uniform resource locator (URL) of the image. 
+                        A URL is the web address or local address where a file is stored.
+                    </p>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="html_img_alts" class="topic-headings">HTML Image Alternate Text</span>
+                <p>
+                    The alt attribute, which means alternative text, brings meaning to the images on our sites. 
+                    The alt attribute can be added to the image tag just like the src attribute. 
+                    The value of alt should be a description of the image.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">img</span>
+
+                            <span class="html-attr">&nbsp;src=</span>
+                            <span class="html-attr-value">"#"&ensp;</span>
+                            <span class="html-attr">&nbsp;alt=</span>
+                            <span class="html-attr-value">"A field of yellow sunflowers"&ensp;</span>
+
+                        <span class="html-tag">&frasl;</span>
+                        <span class="bracket">></span>
+                    </article>
+
+                    <p>
+                        The alt attribute also serves the following purposes:
+                        <ul class="bullet-points">
+                            <li>If an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. This is made possible by the description you provide in the alt attribute.</li>
+                            <br><li>Visually impaired users often browse the web with the aid of screen reading software. When you include the alt attribute, the screen reading software can read the image’s description out loud to the visually impaired user.</li>
+                            <br><li>The alt attribute also plays a role in Search Engine Optimization (SEO), because search engines cannot “see” the images on websites as they crawl the internet. Having descriptive alt attributes can improve the ranking of your site.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        If the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should be left empty.
+                    </p>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="html_videos" class="topic-headings">HTML Videos</span>
+                <p>
+                    In addition to images, HTML also supports displaying videos. Like the &lt;img&gt; tag, the &lt;video&gt; tag requires a src attribute with a link to the video source.
+                     Unlike the &lt;img&gt; tag however, the &lt;video&gt; element requires an opening and a closing tag.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">video</span>
+
+                            <span class="html-attr">&nbsp;src=</span>
+                            <span class="html-attr-value">"myVideo.mp4"&ensp;</span>
+                            <span class="html-attr">&nbsp;width=</span>
+                            <span class="html-attr-value">"320"&ensp;</span>
+                            <span class="html-attr">&nbsp;height=</span>
+                            <span class="html-attr-value">"240"&ensp;</span>
+                            <span class="html-attr">&nbsp;controls</span>
+                            <span class="bracket">></span>
+                        <span class="content">&ensp;Video not supported&ensp;</span>
+                        <span class="bracket"><</span>
+                        <span class="html-tag">&frasl;video</span>
+                        <span class="bracket">></span>
+                    </article>
+                    <p>
+                        In this example, the video source (src) is myVideo.mp4 The source can be a video file that is hosted alongside your webpage, or a URL that points to a video file hosted on another webpage.
+                        <br><br>After the src attribute, the width and height attributes are used to set the size of the video displayed in the browser. The controls attribute instructs the browser to include basic video controls: pause, play and skip.
+                        <br><br>The text, “Video not supported”, between the opening and closing video tags will only be displayed if the browser is unable to load the video.
+                    </p>
+
+                    <p>
+                        If the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should be left empty.
+                    </p>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="html_link_same_page" class="topic-headings">Linking to same page</span>
+                <p>
+                    <span class="question">How do we make it easier for a user to jump to different portions of our page?</span>
+                    
+                    <br><br>When users visit our site, we want them to be able to click a link and have the page automatically scroll to a specific section.
+                    <br><br>In order to link to a target on the same page, we must give the target an id, like this:
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">ol</span>       
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">li</span>       
+                            <span class="bracket">></span>
+                            
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">a</span>       
+                            <span class="html-attr">&nbsp;href=</span>
+                            <span class="html-attr-value">"#top"</span>
+                            <span class="bracket">></span>
+                            <span class="content">Top</span>
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">&frasl;a</span>
+                            <span class="bracket">>&nbsp;</span>
+
+                            <span class="bracket"><</span>
+                            <span class="html-tag">li</span>       
+                            <span class="bracket">></span>
+                            
+                            <br>
+                            
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">li</span>       
+                            <span class="bracket">></span>
+                            
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">a</span>       
+                            <span class="html-attr">&nbsp;href=</span>
+                            <span class="html-attr-value">"#bottom"</span>
+                            <span class="bracket">></span>
+                            <span class="content">Bottom</span>
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">&frasl;a</span>
+                            <span class="bracket">>&nbsp;</span>
+
+                            <span class="bracket"><</span>
+                            <span class="html-tag">li</span>       
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&nbsp;<</span>
+                        <span class="html-tag">&frasl;ol</span>
+                        <span class="bracket">></span>                        
+                    </article>
+
+                    <p>
+                        In this example, the &lt;p&gt; element is assigned an id of “top” and the &lt;h1&gt; element is assigned “bottom.” An id can be added to most elements on a webpage.
+                        <br><br>An id should be descriptive to make it easier to remember the purpose of a link. The target link is a string containing the # character and the target element’s id.
+                        
+                        <article class="remove-space">
+                            <span class="bracket">&emsp;<</span>
+                            <span class="html-tag">p</span>       
+                            <span class="html-attr">&nbsp;id=</span>
+                            <span class="html-attr-value">"top"</span>
+                            <span class="bracket">></span>
+    
+                            <span class="content">This is the top of the page!</span>
+    
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">&frasl;p</span>
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;<</span>
+                            <span class="html-tag">h1</span>       
+                            <span class="html-attr">&nbsp;id=</span>
+                            <span class="html-attr-value">"bottom"</span>
+                            <span class="bracket">></span>
+    
+                            <span class="content">This is the bottom!</span>
+    
+                            <span class="bracket">&nbsp;<</span>
+                            <span class="html-tag">&frasl;h1</span>
+                            <span class="bracket">></span>
+                        </article>
+
+                    </p>
+
+                    <p>
+                        In the example above, the links to &lt;p id="top"&gt; and &lt;h1 id="bottom"&gt; 
+                        are embedded in an ordered list. These links appear in the browser as a numbered list of links. 
+                        An id is especially helpful for organizing content belonging to a div!
+                    </p>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-table" class="topic-headings">Creating Table</span>
+                <p>
+                    Before displaying data, you must first create the table that will contain the data by using the &lt;table&gt; element.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-table-row" class="topic-headings">Creating Table Row</span>
+                <p>
+                   Table contains rows, columns and cells that will hold data. In HTML, all of these components must be created.
+                   <br>First step is to add the rows to the table.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-table-data" class="topic-headings">Creating Table Data</span>
+                <p>
+                   Rows aren't sufficient to add data to a table. Each cell element must also be defined.
+                   <br>You need to add data using the table data element.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">td</span>       
+                                <span class="bracket">></span>
+                                <span class="content">73</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/td</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">td</span>       
+                                <span class="bracket">></span>
+                                <span class="content">81</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/td</span>       
+                                <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-table-heading" class="topic-headings">Creating Table Headings</span>
+                <p>
+                    Table data doesn’t make much sense without titles to describe what the data represents.
+
+                    <br><br>To add titles to rows and columns, you can use the table heading element: &lt;th&gt;.
+                    
+                    <br><br>The table heading element is used just like a table data element, except with a relevant title. 
+                    Just like table data, a table heading must be placed within a table row.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>   
+                                <span class="bracket">></span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>   
+                                <span class="html-attr">&nbsp;scope=</span>   
+                                <span class="html-attr-value">"col"</span> 
+                                <span class="bracket">></span>
+                                <span class="content">Saturday</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>    
+                                <span class="html-attr">&nbsp;scope=</span>   
+                                <span class="html-attr-value">"col"</span>    
+                                <span class="bracket">></span>
+                                <span class="content">Sunday</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>                                
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>   
+                                <span class="html-attr">&nbsp;scope=</span>   
+                                <span class="html-attr-value">"row"</span> 
+                                <span class="bracket">></span>
+                                <span class="content">Temperature</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">td</span>       
+                                <span class="bracket">></span>
+                                <span class="content">73</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/td</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">td</span>       
+                                <span class="bracket">></span>
+                                <span class="content">81</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/td</span>       
+                                <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-spanning-columns" class="topic-headings">Creating Spanning Columns</span>
+                <p>
+                    Column spanning is merging the two column cells, like how you merge A1 and B1 cell in Excel.r
+                    
+                    <br><br>Data can span columns using the colspan attribute. 
+                    The attributes accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>   
+                                <span class="bracket">></span>
+                                <span class="content">Monday</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>   
+                                <span class="bracket">></span>
+                                <span class="content">Tuesday</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>      
+                                <span class="bracket">></span>
+                                <span class="content">Wednesday</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>                                
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">td</span>   
+                                <span class="html-attr">&nbsp;colspan=</span>   
+                                <span class="html-attr-value">"2"</span> 
+                                <span class="bracket">></span>
+                                <span class="content">Out Of Town</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/td</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">td</span>       
+                                <span class="bracket">></span>
+                                <span class="content">73</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/td</span>       
+                                <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-spanning-rows" class="topic-headings">Creating Spanning Rows</span>
+                <p>
+                    Row spanning is merging the two row cells, like how you merge A1 and A2 cell in Excel.
+                    
+                    <br><br>Data can also span multiple rows using the rowspan attribute. 
+                    The attributes accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>   
+                                <span class="bracket">></span>
+                                <span class="content">Monday</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>   
+                                <span class="bracket">></span>
+                                <span class="content">Tuesday</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">th</span>      
+                                <span class="bracket">></span>
+                                <span class="content">Wednesday</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/th</span>       
+                                <span class="bracket">></span>                                
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tr</span>       
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">td</span>   
+                                <span class="html-attr">&nbsp;colspan=</span>   
+                                <span class="html-attr-value">"2"</span> 
+                                <span class="bracket">></span>
+                                <span class="content">Out Of Town</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/td</span>       
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">td</span>       
+                                <span class="bracket">></span>
+                                <span class="content">73</span>
+                                <span class="bracket"><</span>
+                                <span class="html-tag">/td</span>       
+                                <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">/tr</span>       
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-table-body" class="topic-headings">Creating Table Body</span>
+                <p>
+                    Over time, a table can grow to contain a lot of data and become very long. When this happens, 
+                    the table can be sectioned off so that it is easier to manage.
+                    
+                    <br><br>Long tables can be sectioned off using the table body element: &lt;tbody&gt;
+                    The &lt;tbody&gt; element should contain all of the table’s data, excluding the table headings
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tbody</span>
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Saturday</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Sunday</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Morning</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="html-attr">&nbsp; rowspan=</span>
+                                    <span class="html-attr-value">"2"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Work</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="html-attr">&nbsp; rowspan=</span>
+                                    <span class="html-attr-value">"3"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Relax</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Afternoon</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Evening</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="html-attr">&nbsp; rowspan=</span>
+                                    <span class="html-attr-value">"2"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Dinner</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">&frasl;tbody</span>       
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-table-head" class="topic-headings">Creating Table Head</span>
+                <p>
+                    the table’s headings were kept inside of the table’s body. When a table’s body is sectioned off, 
+                    however, it also makes sense to section off the table’s column headings using the &lt;thead&gt; element
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">thead</span>
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="html-attr">scope=</span>
+                                    <span class="html-attr-value">"col"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Saturday</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="html-attr">scope=</span>
+                                    <span class="html-attr-value">"col"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Sunday</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">&frasl;thead</span>       
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tbody</span>
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="html-attr">scope=</span>
+                                    <span class="html-attr-value">"row"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Morning</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="html-attr">&nbsp; rowspan=</span>
+                                    <span class="html-attr-value">"2"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Work</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="html-attr">&nbsp; rowspan=</span>
+                                    <span class="html-attr-value">"3"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Relax</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="html-attr">scope=</span>
+                                    <span class="html-attr-value">"row"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Afternoon</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="html-attr">scope=</span>
+                                    <span class="html-attr-value">"row"</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Evening</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Dinner</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">&frasl;tbody</span>       
+                            <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="cre-table-footer" class="topic-headings">Creating Table Footer</span>
+                <p>
+                    The bottom part of a long table can also be sectioned off using the &lt;tfoot&gt; element.
+                    
+                    <article class="remove-space">
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">table</span>       
+                        <span class="bracket">></span>
+                        <br>
+
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">thead</span>
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Quarter</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Revenue</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Costs</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">&frasl;thead</span>       
+                            <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tbody</span>
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Q1</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">&dollar;10M</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">&dollar;7.5M</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Q2</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">&dollar;12M</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">&dollar;5M</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                            <br>
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">&frasl;tbody</span>       
+                            <span class="bracket">></span>
+                            <br>
+
+                            <span class="bracket">&emsp;&emsp;<</span>
+                            <span class="html-tag">tfoot</span>
+                            <span class="bracket">></span>
+                            <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">th</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">Total</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">&dollar;22M</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                    <br>
+
+                                    <span class="bracket">&emsp;&emsp;&emsp;&emsp;<</span>
+                                    <span class="html-tag">td</span>
+                                    <span class="bracket">></span>
+                                    <span class="content">&dollar;12.5M</span>
+                                    <span class="bracket"><</span>
+                                    <span class="html-tag">&frasl;th</span>
+                                    <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tr</span>
+                                <span class="bracket">></span>
+                                <br>
+                                <span class="bracket">&emsp;&emsp;<</span>
+                                <span class="html-tag">&frasl;tfoot</span>
+                                <span class="bracket">></span>
+                        <br>
+                        <span class="bracket">&emsp;<</span>
+                        <span class="html-tag">&frasl;table</span>
+                        <span class="bracket">></span>                        
+                    </article>
+                </p>
+
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="forms" class="topic-headings">Forms</span>
+                <p>
+                    We can think of the internet as a network of computers which send and receive information. 
+                    Computers need an HTTP request to know how to communicate. 
+                    The HTTP request instructs the receiving computer how to handle the incoming information. 
+                    More information can be found in our article about HTTP requests.
+                </p>
+
+                <p>
+                    The &lt;form&gt; element is a great tool for collecting information, 
+                    but then we need to send that information somewhere else for processing. 
+                    We need to supply the &lt;form&gt; element with both the location of where the &lt;form&gt;‘s 
+                    information goes and what HTTP request to make. Take a look at the sample &lt;form&gt; below:
+                </p>
+                <img src="../resources/images/forms.JPG" alt="Form syntax">
+                <br>
+                <p>
+                    In the above example, we’ve created the skeleton for a &lt;form&gt; that will send information to 
+                    example.html as a POST request:
+                </p>
+                <ul>
+                    <li>The action attribute determines where the information is sent.</li>
+                    <li>The method attribute is assigned a HTTP verb that is included in the HTTP request.</li>
+                </ul>
+
+                <strong>Note:</strong>
+                <p>
+                    HTTP verbs like POST do not need to be capitalized for the request to work, but it’s done so out of convention. 
+                    In the example above we could have written method&equals;&quot;post&quot; and it would still work.
+                </p>
+                <p>
+                    The &lt;form&gt; element can also contain child elements. For instance, it would be helpful to provide a header 
+                    so that users know what this &lt;form&gt; is about.
+                    We could also add a paragraph to provide even more detail. Let’s see an example of this in code:
+                </p>
+                <img src="../resources/images/forms_1.JPG" alt="Form syntax">
+
+                <br>
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+                <span id="text-input" class="topic-headings">Text Input</span>
+                <p>
+                    If we want to create an input field in our &lt;form&gt;, we’ll need the help of the &lt;input&gt; element.
+                </p>
+
+                <p>
+                    The &lt;input&gt; element has a type attribute which determines how it renders on the web page and
+                     what kind of data it can accept.
+                </p>
+                <br>
+                <span id="top-navigate"><a href="#about-html">&uparrow; Top</a></span>
+                <br><br><br>
+
+            </section>
+        </main>       
+        
+    </body>
+</html>

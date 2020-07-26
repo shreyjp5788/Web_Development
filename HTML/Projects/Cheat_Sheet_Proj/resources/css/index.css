@@ -1,0 +1,104 @@
+.top-heading    {
+    background-color: cornflowerblue;
+    color: white;
+    margin-top: -18px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.top-heading h1  {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.language a {
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    color: white;
+}
+
+#about-html, span#topics {
+    background-color: darkgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    position: relative;
+}
+
+.topic  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10pt;
+}
+
+.topic-headings
+{
+    background-color: slateblue;
+    /* margin-right: 80%; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    position: relative;
+    color: white;
+}
+
+.question  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    position: relative;
+    color: black;
+    font-weight: bold;
+}
+
+/* #top-navigate  a  */
+#navigate, .top {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10pt;
+}
+
+P   {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
+.bullet-points li   {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11pt;
+}
+
+.img-center {
+    display: block;
+    width: 350px;
+}
+
+.remove-space   {
+    font-size: 0pt;
+    background-color: rgb(0, 0, 0);
+    margin-right: 75%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 9pt;
+}
+
+.bracket, .html-tag {
+    font-size: 8pt;
+    color:rgb(199, 82, 121);
+}
+
+.content    {
+    font-size: 8pt;
+    color: white;
+}
+
+.html-attr  {
+    font-size: 8pt;
+    color: greenyellow;
+}
+
+.html-attr-value    {
+    font-size: 8pt;
+    color: yellow;
+}
